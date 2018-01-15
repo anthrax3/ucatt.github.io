@@ -1,0 +1,114 @@
+
+		<!DOCTYPE html>
+		<html>
+		<meta name="theme-color" content="#111">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="src/css/stat.css">
+		<title>ucatt</title>
+		<link rel="stylesheet" href="style.css">
+		<body>
+			<div class="main">
+				<h1>Java Arrays</h1>Java provides a data structure, the array, which stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.<br />
+<br />
+<b>Declaring array Variables</b><br />
+To use an array in a program, you must declare a variable to reference the array, and you must specify the type of array the variable can reference.<br />
+<code>dataType[] arrayRef;<br />
+or<br />
+dataType arrayRef[];</code><br />
+<br />
+<b>Creating Arrays</b><br />
+You can create an array by using the new operator with the following syntax −<br />
+<code>arrayRef = new dataType[arraySize];</code><br />
+Declaring an array variable, creating an array, and assigning the reference of the array to the variable can be combined in one statement, as shown below −<br />
+<code>dataType[] arrayRefVar = new dataType[arraySize];</code><br />
+Alternatively you can create arrays as follows −<br />
+<code>dataType[] arrayRefVar = {value0, value1, ..., valuek};</code><br />
+Ex: double[] myList = new double[10];<br />
+<h2>Processing arrays</h3>When processing array elements, we often use either for loop or foreach loop because all of the elements in an array are of the same type and the size of the array is known.<br />
+Example:<br />
+<pre><br />
+public class TestArray {<br />
+   public static void main(String[] args) {<br />
+      double[] myList = {1.9, 2.9, 3.4, 3.5};<br />
+      // Print all the array elements<br />
+      for (int i = 0; i < myList.length; i++) {<br />
+         System.out.println(myList[i] + " ");<br />
+      }<br />
+      // Summing all elements<br />
+      double total = 0;<br />
+      for (int i = 0; i < myList.length; i++) {<br />
+         total += myList[i];<br />
+      }<br />
+      System.out.println("Total is " + total);<br />
+      <br />
+      // Finding the largest element<br />
+      double max = myList[0];<br />
+      for (int i = 1; i < myList.length; i++) {<br />
+         if (myList[i] > max) max = myList[i];<br />
+      }<br />
+      System.out.println("Max is " + max);  <br />
+   }<br />
+}<br />
+</pre>Output<br />
+<pre><br />
+1.9<br />
+2.9<br />
+3.4<br />
+3.5<br />
+Total is 11.7<br />
+Max is 3.5</pre><br />
+JDK 1.5 introduced a new for loop known as <b>foreach loop</b> or enhanced for loop, which enables you to traverse the complete array sequentially without using an index variable.<br />
+<pre><br />
+public class TestArray {<br />
+   public static void main(String[] args) {<br />
+      double[] myList = {1.9, 2.9, 3.4, 3.5};<br />
+<br />
+      // Print all the array elements<br />
+      for (double element: myList) {<br />
+         System.out.println(element);<br />
+      }<br />
+   }<br />
+}<br />
+</pre>Output<br />
+<pre><br />
+1.9<br />
+2.9<br />
+3.4<br />
+3.5</pre><br />
+<h2>Passing Arrays to Methods</h2>Just as you can pass primitive type values to methods, you can also pass arrays to methods.<br />
+<pre><br />
+class ArrToMeth{<br />
+    private static void printarr(int[] arr){<br />
+        int i=0;<br />
+        for(int var:arr){<br />
+            System.out.print(var+" ");<br />
+        }<br />
+    }<br />
+    public static void main(String[] a){<br />
+        int[] arr={1,2,3,4};<br />
+        printarr(arr);<br />
+    }   <br />
+}<br />
+</pre><br />
+<h2>Returning an array from a method</h2>A method may also return an array.<br />
+<pre><br />
+class retArrayFromMeth{<br />
+    private static void printarr(int[] arr){<br />
+        int i=0;<br />
+        for(int var:arr){<br />
+            System.out.print(var+" ");<br />
+        }<br />
+    }<br />
+    private static int[] getElems(){<br />
+        int[] arr={1,2,3,4};<br />
+        return arr;<br />
+    }<br />
+    public static void main(String[] a){<br />
+        int[] arr=getElems();<br />
+        printarr(arr);<br />
+    }   <br />
+}<br />
+</pre>
+			</div>
+		</body>
+		</html>

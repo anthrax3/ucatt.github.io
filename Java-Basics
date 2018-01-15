@@ -1,0 +1,135 @@
+
+		<!DOCTYPE html>
+		<html>
+		<meta name="theme-color" content="#111">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="src/css/stat.css">
+		<title>ucatt</title>
+		<link rel="stylesheet" href="style.css">
+		<body>
+			<div class="main">
+				<h1>Java-Basics</h1>Java is an object oriented programming language and supports various features like<br />
+<div class="pad">Polymorphism<br />
+    Inheritance<br />
+    Encaptulation<br />
+    Abstraction<br />
+    Classes<br />
+    Objects<br />
+    Instance<br />
+    Method<br />
+    Message parsing</div><br />
+<h4>OBJECT</h4>Objects have states and behaviors. Anything that we see around us in an object. An object is an instance of a class.<br />
+<h4>CLASS</h4>A class can be defined as a template/a blueprint that describes the behaviors/state that the object of it's type support.<br />
+<br />
+<h2>OBJECTS IN JAVA</h2>Let us now look deep into what are objects. If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these objects have a state and a behavior.<br />
+If we consider a dog, then its state is - name, breed, color, and the behavior is - barking, wagging the tail, running.<br />
+If you compare the software object with a real-world object, they have very similar characteristics.<br />
+Software objects also have a state and a behavior. A software object's state is stored in fields and behavior is shown via methods.<br />
+<h2>CLASSES IN JAVA</h2>A class is a blueprint from which individual objects are created.<br />
+Example:<br />
+<pre><br />
+public class Dog {<br />
+  String breed;<br />
+  int age;<br />
+  String color;<br />
+  void barking() {<br />
+  }<br />
+  void hungry() {<br />
+  }<br />
+  void sleeping() {<br />
+  }<br />
+}</pre><br />
+A class can contain any of the following variable types.<br />
+<b>Local variables</b>-Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.<br />
+<b>Instance variables</b>-Instance variables are variables within a class but outside any method. These variables are initialized when the class is instantiated. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.<br />
+<b>Class variables</b>-Class variables are variables declared within a class, outside any method, with the static keyword.<br />
+<br />
+<h2>Constructors</h2>When discussing about classes, one of the most important sub topic would be constructors. Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class.<br />
+Each time a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the same name as the class. A class can have more than one constructor.<br />
+Following is an example of a constructor −<br />
+<pre><br />
+public class Puppy {<br />
+   public Puppy() {<br />
+   }<br />
+<br />
+   public Puppy(String name) {<br />
+      // This constructor has one parameter, name.<br />
+   }<br />
+}</pre><br />
+<h2>Creating an Object</h2>As mentioned previously, a class provides the blueprints for objects. So basically, an object is created from a class. In Java, the new keyword is used to create new objects.<br />
+There are three steps when creating an object from a class −<br />
+<div class="pad">Declaration-A variable declaration with a variable name with an object type.<br />
+    Instantiation-The 'new' keyword is used to create the object.<br />
+    Initialization-The 'new' keyword is followed by a call to a constructor. This call initializes the new object.<br />
+</div><br />
+Following is an example of creating an object −<br />
+<pre><br />
+public class Puppy {<br />
+   public Puppy(String name) {<br />
+      // This constructor has one parameter, name.<br />
+      System.out.println("Passed Name is :" + name );<br />
+   }<br />
+<br />
+   public static void main(String []args) {<br />
+      // Following statement would create an object myPuppy<br />
+      Puppy myPuppy = new Puppy( "tommy" );<br />
+   }<br />
+}</pre><br />
+The output will be <b>Passed Name is :tommy</b><br />
+<h2>Accessing Instance variables and Methods</h2>Instance variables and methods are accessed via created objects. To access an instance variable, following is the fully qualified path −<br />
+<pre><br />
+/* First create an object */<br />
+ObjectReference = new Constructor();<br />
+<br />
+/* Now call a variable as follows */<br />
+ObjectReference.variableName;<br />
+<br />
+/* Now you can call a class method as follows */<br />
+ObjectReference.MethodName();<br />
+</pre><br />
+Here is an example code:<br />
+<pre><br />
+public class Puppy {<br />
+   int puppyAge;<br />
+<br />
+   public Puppy(String name) {<br />
+      // This constructor has one parameter, name.<br />
+      System.out.println("Name chosen is :" + name );<br />
+   }<br />
+<br />
+   public void setAge( int age ) {<br />
+      puppyAge = age;<br />
+   }<br />
+<br />
+   public int getAge( ) {<br />
+      System.out.println("Puppy's age is :" + puppyAge );<br />
+      return puppyAge;<br />
+   }<br />
+<br />
+   public static void main(String []args) {<br />
+      /* Object creation */<br />
+      Puppy myPuppy = new Puppy( "tommy" );<br />
+<br />
+      /* Call class method to set puppy's age */<br />
+      myPuppy.setAge( 2 );<br />
+<br />
+      /* Call another class method to get puppy's age */<br />
+      myPuppy.getAge( );<br />
+<br />
+      /* You can access instance variable as follows as well */<br />
+      System.out.println("Variable Value :" + myPuppy.puppyAge );<br />
+   }<br />
+}<br />
+</pre><br />
+The out putwill be like:<br />
+<pre><br />
+Name chosen is :tommy<br />
+Puppy's age is :2<br />
+Variable Value :2<br />
+</pre><br />
+<br />
+<br />
+
+			</div>
+		</body>
+		</html>
