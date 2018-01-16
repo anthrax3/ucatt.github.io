@@ -84,7 +84,7 @@
     .countDown{font-size:24px;text-align:center;float:right;color:orange;}
     .footer{display:none;}
     .gGrey{background:#fff;}
-    .ViewAll{clear:left;padding-top:30px;cursor:pointer;}
+    .ViewAll{clear:left;padding-top:30px;font-size:16px;color:#4285f4;cursor:pointer;padding:2%;}
     .spaceAvg{clear:left;padding-top:50px;}
     .icon{height:80px;width:80px;background: url('icon.png') center/cover;}
 }
