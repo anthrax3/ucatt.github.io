@@ -53,13 +53,13 @@
     .biggFont{font-size:40px;}
     .bigFont{font-size:21px;}
     .space20{padding-top:20%;}
-    .only70{width:94%;margin:auto;}
+    .only70{width:100%;margin:auto;}
     .shadow{box-shadow:0 6px 9px rgba(0,0,0,0.4);}
     .shadowL{box-shadow:0 4px 6px rgba(0,0,0,0.6);transition:0.3s;}
     .shadowL:hover{box-shadow:0 5px 7px rgba(0,0,0,0.7);transition:0.3s;}
-    .topBar{position:fixed;opacity:0;padding-top:12px;color:#444;width:100%;background:#f1f1f1;padding-bottom:12px;transition:0.3s;}
+    .topBar{position:fixed;opacity:0;padding-top:16px;color:#444;width:100%;background:inherit;padding-bottom:16px;transition:0.3s;}
     .topBarLater{opacity:1;transition:0.2s;}
-    .mad{margin:auto;width:94%;}
+    .mad{margin:auto;width:100%;}
     .madWide{width:100%;float:left;margin-bottom:10%;}
     .main{width:100%;margin-top:-2.5%;background:#fff;margin-bottom:10%;border-radius:3px;float:left;}
     .mainContent{float:left;width:100%;word-wrap: break-word;line-height:1.5;font-size:16px;font-weight:300;}
