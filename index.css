@@ -50,11 +50,11 @@
     a{color:inherit;text-decoration: none;outline-style: none;}
     .head{width:100%;background:url('homeImg.jpg') fixed center/cover;height:105vh;}
     .headContent{background:rgba(0,0,0,0.8);font-family:courier new;color:#fff;height:100%;}
-    .biggFont{font-size:40px;}
-    .bigFont{font-size:21px;}
+    .biggFont{font-size:40px;padding:2%;}
+    .bigFont{font-size:21px;padding:2%;}
     .space20{padding-top:23%;}
     .only70{width:100%;margin:auto;}
-    .topBar{position:fixed;opacity:0;padding-top:16px;color:#444;width:100%;background:#fff;padding-bottom:16px;transition:0.3s;}
+    .topBar{padding:2%;position:fixed;opacity:0;padding-top:16px;color:#444;width:100%;background:#fff;padding-bottom:16px;transition:0.3s;}
     .topBarLater{opacity:1;transition:0.2s;}
     .mad{margin:auto;width:100%;}
     .madWide{width:100%;float:left;margin-bottom:10%;}
